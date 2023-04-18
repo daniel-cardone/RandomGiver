@@ -1,0 +1,9 @@
+name: RandomGiver
+version: '${project.version}'
+main: us.bluescript.randomgiver.RandomGiver
+api-version: 1.19
+commands:
+  match:
+    description: Start or stop a match (enables/disables random item giving)
+    usage: /match <start|stop>
+    permission: randomgiver.match
