@@ -20,6 +20,8 @@ public class CommandMatch implements CommandExecutor, TabCompleter {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if (args.length < 1) return false;
+
         if (args[0].equals("start")) {
             if (task != -1) {
                 sender.sendMessage("A match is already ongoing.");
